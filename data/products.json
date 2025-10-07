@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "price": 1200,
+        "description": "High-quality wireless headphones",
+        "image": "images/headphones.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "price": 2500,
+        "description": "Stylish smart watch with multiple features",
+        "image": "images/smartwatch.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Laptop Bag",
+        "price": 1500,
+        "description": "Durable laptop bag with extra compartments",
+        "image": "images/laptopbag.jpg"
+    }
+]
