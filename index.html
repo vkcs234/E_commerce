@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V2S E-Commerce | Home</title>
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
-    <header>
-        <h1>My E-Commerce Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="cart.html">Cart</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
+  <header>
+    <h1>🛍️ V2S E-Commerce</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="product-list">
-            <!-- Products will be loaded here -->
-        </section>
-    </main>
+  <main>
+    <section class="banner">
+      <h2>Welcome to V2S Store</h2>
+      <p>Shop your favorite products at the best prices!</p>
+    </section>
 
-    <script type="module" src="js/main.js"></script>
+    <section class="products-section">
+      <h2>Featured Products</h2>
+      <div id="productList" class="product-grid">
+        <!-- Products dynamically loaded by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 V2S E-Commerce | Designed by Varun</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

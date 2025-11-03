@@ -1,1 +1,40 @@
-<!-- Cart page placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cart | V2S E-Commerce</title>
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍️ My Cart</h1>
+  </header>
+
+  <main>
+    <div class="cart-container">
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+            <th>Subtotal (₹)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- Dynamic cart items -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+        <button id="checkoutBtn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
