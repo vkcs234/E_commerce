@@ -1,4 +1,4 @@
-// Sample product data (you can replace or load from JSON later)
+
 const products = [
   { id: 1, name: "Wireless Headphones", price: 1999, image: "/images/headphones.jpg" },
   { id: 2, name: "Smart Watch", price: 2999, image: "/images/watch.jpg" },
@@ -25,7 +25,6 @@ function renderProducts() {
   });
 }
 
-// Add product to cart (stored in localStorage)
 function addToCart(id) {
   const product = products.find((p) => p.id === id);
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -41,5 +40,4 @@ function addToCart(id) {
   alert(`${product.name} added to cart!`);
 }
 
-// Initialize
 renderProducts();
