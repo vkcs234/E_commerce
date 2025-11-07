@@ -1,4 +1,4 @@
-// Protect admin page
+
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
 if (!loggedInUser || loggedInUser.role !== "admin") {
@@ -6,7 +6,7 @@ if (!loggedInUser || loggedInUser.role !== "admin") {
   window.location.href = "login.html";
 }
 
-// Initialize product data
+
 if (!localStorage.getItem("products")) {
   localStorage.setItem("products", JSON.stringify([]));
 }
@@ -16,7 +16,6 @@ const productListSection = document.createElement("section");
 productListSection.innerHTML = "<h3>Existing Products</h3>";
 document.querySelector(".admin-container").appendChild(productListSection);
 
-// Display existing products
 function displayProducts() {
   const products = JSON.parse(localStorage.getItem("products"));
   productListSection.innerHTML = "<h3>Existing Products</h3>";
@@ -39,7 +38,7 @@ function displayProducts() {
   productListSection.appendChild(list);
 }
 
-// Add new product
+
 productForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -61,7 +60,6 @@ productForm.addEventListener("submit", (e) => {
   displayProducts();
 });
 
-// Delete product
 window.deleteProduct = (index) => {
   const products = JSON.parse(localStorage.getItem("products"));
   products.splice(index, 1);
