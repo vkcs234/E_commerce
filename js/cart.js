@@ -1,10 +1,9 @@
-// Retrieve cart from localStorage or initialize empty array
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const cartItemsContainer = document.getElementById("cartItems");
 const totalPriceEl = document.getElementById("totalPrice");
 
-// Function to render cart items
 function renderCart() {
   cartItemsContainer.innerHTML = "";
 
@@ -37,21 +36,18 @@ function renderCart() {
   totalPriceEl.textContent = total.toFixed(2);
 }
 
-// Update quantity
 function updateQuantity(index, newQty) {
   cart[index].quantity = parseInt(newQty);
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
 
-// Remove item from cart
 function removeItem(index) {
   cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
 
-// Checkout button
 document.getElementById("checkoutBtn").addEventListener("click", () => {
   if (cart.length === 0) {
     alert("Your cart is empty!");
@@ -63,5 +59,4 @@ document.getElementById("checkoutBtn").addEventListener("click", () => {
   renderCart();
 });
 
-// Initial render
 renderCart();
