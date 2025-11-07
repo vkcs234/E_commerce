@@ -1,4 +1,3 @@
-// Initialize mock users if not already stored
 if (!localStorage.getItem("users")) {
   const users = [
     { username: "admin", password: "admin123", role: "admin" },
